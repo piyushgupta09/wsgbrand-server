@@ -1,0 +1,17 @@
+{
+    "name": "Wsg Brand App",
+    "short_name": "WB",
+    "start_url": "/index.php",
+    "background_color": "#ed4747",
+    "description": "Brand management app for WSG ecommerce platform",
+    "display": "fullscreen",
+    "theme_color": "#ed4747",
+    "icons": [
+        {
+            "src": "logo.PNG",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

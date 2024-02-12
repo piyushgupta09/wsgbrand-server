@@ -70,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Kolkata',
 
     /*
     |--------------------------------------------------------------------------
@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'en-in',
 
     /*
     |--------------------------------------------------------------------------
@@ -159,7 +159,9 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Fpaipl\Authy\AuthyServiceProvider::class,
+        Fpaipl\Panel\PanelServiceProvider::class,
+        
         /*
          * Application Service Providers...
          */
