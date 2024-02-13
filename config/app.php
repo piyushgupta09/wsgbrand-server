@@ -161,13 +161,15 @@ return [
          */
         Fpaipl\Authy\AuthyServiceProvider::class,
         Fpaipl\Panel\PanelServiceProvider::class,
-        
+        Fpaipl\Prody\ProdyServiceProvider::class,
+        Fpaipl\Brandy\BrandyServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
     ])->toArray(),
