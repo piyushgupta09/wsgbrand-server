@@ -17,4 +17,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/modules
+/modules/authy/vendor
+/modules/brandy/vendor
+/modules/panel/vendor
+/modules/prody/vendor
