@@ -237,4 +237,107 @@ return [
         ]
     ],
 
+
+    'decision_values' => [
+        'ecomm' => [
+            'strategy' => 1,
+            'discount' => 1,
+            'refund-policy' => 1,
+            'return-policy' => 1,
+        ],
+        'inbulk' => [
+            'strategy' => 1,
+            'discount' => 1,
+            'refund-policy' => 1,
+            'return-policy' => 1,
+        ],
+        'retail' => [
+            'strategy' => 1,
+            'discount' => 1,
+            'refund-policy' => 1,
+            'return-policy' => 1,
+        ],
+        'pos' => [
+            'strategy' => 1,
+            'discount' => 1,
+            'refund-policy' => 1,
+            'return-policy' => 1,
+        ],
+    ],
+
+    'default' => [
+        'measurements' => [
+            'Hips' => [
+                'free-size' => '34',
+                'large' => '38',
+                'small' => '32',
+                'medium' => '36',
+                'large' => '36',
+                'xlarge' => '38',
+                'xxlarge' => '42',
+                'xxxlarge' => '42',
+            ],
+            'Bust' => [
+                'free-size' => '34',
+                'large' => '38',
+                'small' => '32',
+                'medium' => '36',
+                'large' => '36',
+                'xlarge' => '38',
+                'xxlarge' => '42',
+                'xxxlarge' => '42',
+            ],
+            'Waist' => [
+                'free-size' => '34',
+                'large' => '38',
+                'small' => '32',
+                'medium' => '36',
+                'large' => '36',
+                'xlarge' => '38',
+                'xxlarge' => '42',
+                'xxxlarge' => '42',
+            ],
+            'Length' => [
+                'free-size' => '34',
+                'large' => '38',
+                'small' => '32',
+                'medium' => '36',
+                'large' => '36',
+                'xlarge' => '38',
+                'xxlarge' => '42',
+                'xxxlarge' => '42',
+            ],
+            'Shoulder' => [
+                'free-size' => '34',
+                'large' => '38',
+                'small' => '32',
+                'medium' => '36',
+                'large' => '36',
+                'xlarge' => '38',
+                'xxlarge' => '42',
+                'xxxlarge' => '42',
+            ],
+            'Sleeve' => [
+                'free-size' => '34',
+                'large' => '38',
+                'small' => '32',
+                'medium' => '36',
+                'large' => '36',
+                'xlarge' => '38',
+                'xxlarge' => '42',
+                'xxxlarge' => '42',
+            ],
+            'Collar' => [
+                'free-size' => '34',
+                'large' => '38',
+                'small' => '32',
+                'medium' => '36',
+                'large' => '36',
+                'xlarge' => '38',
+                'xxlarge' => '42',
+                'xxxlarge' => '42',
+            ],
+        ],
+    ],
+
 ];

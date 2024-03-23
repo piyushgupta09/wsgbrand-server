@@ -5,7 +5,8 @@ return [
     'api' => [
         'cache' => [
             'enabled' => false,
-            'duration' => 60 * 60 * 24 * 7, // 1 week
+            'duration' => 1, // 1 minute
+            // 'duration' => 60 * 60 * 24 * 7, // 1 week
         ],
     ],
 
@@ -253,11 +254,11 @@ return [
                     'route' => 'parties.index',
                     'access' => 'admin|manager-brand|data-manager',
                 ],
-                // [
-                //     'name' => 'Suppliers',
-                //     'route' => 'suppliers.index',
-                //     'access' => 'admin|manager-brand|data-manager',
-                // ],
+                [
+                    'name' => 'Suppliers',
+                    'route' => 'suppliers.index',
+                    'access' => 'admin|manager-brand|data-manager',
+                ],
             ],
         ],
         [
@@ -269,8 +270,8 @@ return [
             'access' => 'admin|manager-brand|data-manager',
             'child' => [
                 [
-                    'name' => 'Categories',
-                    'route' => 'categories.index',
+                    'name' => 'Products',
+                    'route' => 'products.index',
                     'access' => 'admin|manager-brand|data-manager',
                 ],
                 [
@@ -279,8 +280,8 @@ return [
                     'access' => 'admin|manager-brand|data-manager',
                 ],
                 [
-                    'name' => 'Products',
-                    'route' => 'products.index',
+                    'name' => 'Categories',
+                    'route' => 'categories.index',
                     'access' => 'admin|manager-brand|data-manager',
                 ],
                 [
@@ -299,6 +300,11 @@ return [
             'access' => 'admin|manager-brand|data-manager',
             'child' => [
                 [
+                    'name' => 'Material',
+                    'route' => 'materials.index',
+                    'access' => 'admin|manager-brand|data-manager',
+                ],
+                [
                     'name' => 'Fixed Costs',
                     'route' => 'fixedcosts.index',
                     'access' => 'admin|manager-brand|data-manager',
@@ -316,6 +322,36 @@ return [
             ],
         ],
         [
+            'id' => 'menu-price-control',
+            'icon' => 'bi bi-file-spreadsheet',
+            'name' => 'Product Plans',
+            'route' => null,
+            'position' => 3,
+            'access' => 'admin|manager-brand|data-manager',
+            'child' => [
+                [
+                    'name' => 'Pricing Strategy',
+                    'route' => 'strategies.index',
+                    'access' => 'admin|manager-brand|data-manager',
+                ],
+                [
+                    'name' => 'Discount Offers',
+                    'route' => 'discounts.index',
+                    'access' => 'admin|manager-brand|data-manager',
+                ],
+                [
+                    'name' => 'Return Policy',
+                    'route' => 'return-policies.index',
+                    'access' => 'admin|manager-brand|data-manager',
+                ],
+                [
+                    'name' => 'Refund Conditions',
+                    'route' => 'refund-policies.index',
+                    'access' => 'admin|manager-brand|data-manager',
+                ],
+            ],
+        ],
+        [
             'id' => 'menu-dataset',
             'icon' => 'bi bi-diagram-3',
             'name' => 'Datasets',
@@ -323,21 +359,6 @@ return [
             'position' => 3,
             'access' => 'admin|manager-brand|data-manager',
             'child' => [
-                [
-                    'name' => 'Material',
-                    'route' => 'materials.index',
-                    'access' => 'admin|manager-brand|data-manager',
-                ],
-                [
-                    'name' => 'Units',
-                    'route' => 'units.index',
-                    'access' => 'admin|manager-brand|data-manager',
-                ],
-                [
-                    'name' => 'Taxes',
-                    'route' => 'taxes.index',
-                    'access' => 'admin|manager-brand|data-manager',
-                ],
                 [
                     'name' => 'Attributes',
                     'route' => 'attrikeys.index',
@@ -348,45 +369,18 @@ return [
                     'route' => 'measurekeys.index',
                     'access' => 'admin|manager-brand|data-manager',
                 ],
+                // [
+                //     'name' => 'Units',
+                //     'route' => 'units.index',
+                //     'access' => 'admin|manager-brand|data-manager',
+                // ],
+                [
+                    'name' => 'Taxes',
+                    'route' => 'taxes.index',
+                    'access' => 'admin|manager-brand|data-manager',
+                ],
             ],
         ],
-
-
-
-
-
-        // [
-        //     'module' => 'New Modules',
-        //     'access' => 'admin|manager|data-manager',
-        //     'child' => [],
-        // ],
-        // [
-        //     'id' => 'menu-order-123',
-        //     'icon' => 'bi bi-x-lg',
-        //     'name' => 'Desdsd',
-        //     'route' => null,
-        //     'position' => 2,
-        //     'access' => 'admin|manager-brand|data-manager',
-        //     'child' => [
-        //         [
-        //             'name' => 'Decision',
-        //             'route' => 'employees.index',
-        //             'access' => 'admin|manager-brand|data-manager',
-        //         ],
-        //         [
-        //             'name' => 'Platforms',
-        //             'route' => 'parties.index',
-        //             'access' => 'admin|manager-brand|data-manager',
-        //         ],
-        //         // [
-        //         //     'name' => 'Suppliers',
-        //         //     'route' => 'suppliers.index',
-        //         //     'access' => 'admin|manager-brand|data-manager',
-        //         // ],
-        //     ],
-        // ],
-
-
 
 
         [
@@ -402,6 +396,13 @@ return [
             'position' => 6,
             'access' => 'admin',
             'child' => [
+                [
+                    'icon' => 'bi bi-arrow-right-short text-white',
+                    'name' => 'Sync Data',
+                    'route' => 'sync.index',
+                    'position' => 1,
+                    'access' => 'admin',
+                ],
                 [
                     'icon' => 'bi bi-arrow-right-short text-white',
                     'name' => 'Users',
