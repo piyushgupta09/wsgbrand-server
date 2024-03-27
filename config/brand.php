@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'version' => 'v1.0',
+    'version' => 'v 0.3',
     'name' => 'WSG Brand',
     'tagline' => 'Wholesale Guruji Brand',
     'logo' => '/storage/assets/logo.png',
